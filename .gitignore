@@ -1,0 +1,5 @@
+# Ignore student data CSV
+student.csv
+
+# Ignore certificate template image
+Certificate_template.jpg
