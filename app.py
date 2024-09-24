@@ -43,7 +43,7 @@ def generate_certificate():
 
     else:
         # Student not found, return an error message
-        return "Student not found. Please check your details and try again."
+        return render_template('index.html', message="Student not found. Please check your details and try again.")
 
 # Function to generate the certificate
 def create_certificate(name):

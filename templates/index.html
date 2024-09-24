@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <div class="container">
+        {% if message %}
+        <div class="error-message">
+            <h2>Oops!</h2>
+            <p>{{ message }}</p>
+        </div>
+        {% else %}
+        <div class="container">
         <h1>Download Your Certificate</h1>
         <form action="/generate_certificate" method="POST">
             <label for="name">Name:</label>
@@ -20,7 +26,8 @@
 
             <button type="submit">Download Certificate</button>
         </form>
-    </div>
+        </div>
+        {% endif %}
+    
 </body>
-
 </html>
